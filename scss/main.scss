@@ -1,7 +1,17 @@
-@import "specification";
+@import "base/reset";
+@import "base/specification";
+
 @import "grids";
 
-//@import "vite-default";
+/* Border Box Trick */
+/* padding ist in der Box Breite miteingerechnet*/
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+/* Ende Border Box Trick*/
 
 
 
@@ -23,10 +33,14 @@ header{
 
 .bento-box-title-big{
     @include bentoBoxTitleBigFont();
+    margin-bottom: $basicHeight;
 }
 
-.bento-box-title-small{
+.bento-box-title-small,.bento-box-title-small--first-box{
     @include bentoBoxTitleSmallFont();
+}
+.bento-box-title-small--first-box{
+    text-align: center;
 }
 
 footer{
@@ -38,19 +52,31 @@ footer{
  /* **************************************************** */
  /* ********* ab hier für mobile querformat ************ */
  @media screen and (min-width: $breakpoint-medium) {    // wenn Bildschirm grösser als, dann...
-  
+    .bento-box-title-big{
+        font-size: 7.1vw;
+    }
+    
+    .bento-box-title-small,.bento-box-title-small--first-box{
+        font-size: 4.1vw;
+    }
+    .bento-box-title-small--first-box{
+        text-align: left;
+    }
  }
  
  
  /* *************************************************** */
  /* *********** ab hier für desktop ******************* */
  @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
-   
-
-   
-
-
+    .bento-box-title-big{
+        font-size: 6.5vw;
+    }
     
+    .bento-box-title-small,.bento-box-title-small--first-box{
+        font-size: 2.8vw;
+    }
+
+   
  }
  
  
@@ -58,5 +84,11 @@ footer{
  /* *************************************************** */
  /* ****** ab hier für desktop maximale Breite ******** */
  @media screen and (min-width: $maxWidth) {    // wenn Bildschirm die maximale Breite erreicht hat
-  
+    .bento-box-title-big{
+        font-size: 5rem;
+    }
+    
+    .bento-box-title-small,.bento-box-title-small--first-box{
+        font-size: 2.1rem;
+    }
  }
