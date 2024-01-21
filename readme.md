@@ -4,6 +4,7 @@
 ## Server starten:
 yarn dev
 (Server läuft unter: http://localhost:5173/)
+ACHTUNG: Node Version checken, sollte 20.10.0 sein.
 
 
 ## Build starten (dist wird erstellt):

@@ -1,0 +1,143 @@
+/* ****************************************************** */
+/* ****************** für mobile  ********************** */
+.basic-grid {
+    display: grid;
+    grid: [Zeile1-Start] "header"  100px [Zeile1-Ende]
+          [Zeile2-Start] "main"    auto  [Zeile2-Ende]
+          [Zeile3-Start] "footer"  100px [Zeile3-Ende]
+          / 1fr;
+}
+
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+.bento-grid-home {
+    display: grid;
+    grid: [Zeile1-Start]  "title      " 200px [Zeile1-Ende]
+          [Zeile2-Start]  "room       " 200px [Zeile2-Ende]
+          [Zeile3-Start]  "camping    " 200px [Zeile3-Ende]
+          [Zeile4-Start]  "picture    " 200px [Zeile4-Ende]
+          [Zeile5-Start]  "picture    " 200px [Zeile5-Ende]
+          [Zeile6-Start]  "contact    " 200px [Zeile6-Ende]
+          [Zeile7-Start]  "contact    " 200px [Zeile7-Ende]
+          [Zeile8-Start]  "team       " 200px [Zeile8-Ende]
+          [Zeile9-Start]  "offer      " 50px  [Zeile9-Ende]
+          [Zeile10-Start] "cafe       " 200px [Zeile10-Ende]
+          [Zeile11-Start] "spirit     " 200px [Zeile11-Ende]
+          [Zeile12-Start] "whitewater " 200px [Zeile12-Ende]
+          / 1fr;
+
+
+    grid-row-gap: 2*$basicWidth;
+    grid-column-gap: 2*$basicWidth;
+   
+    margin: $basicHeight $basicWidth;
+}
+
+.title-bento-box {
+    grid-area: title;
+}
+
+.contact-bento-box {
+    grid-area: contact;
+}
+
+.team-bento-box {
+    grid-area: team;
+}
+
+.room-bento-box {
+    grid-area: room;
+}
+
+.camping-bento-box {
+    grid-area: camping;
+}
+
+.picture-bento-box {
+    grid-area: picture;
+}
+
+.offer-bento-box {
+    grid-area: offer;
+}
+
+.cafe-bento-box {
+    grid-area: cafe;
+}
+
+.spirit-bento-box {
+    grid-area: spirit;
+}
+
+.whitewater-bento-box {
+    grid-area: whitewater;
+}
+
+
+
+ /* **************************************************** */
+ /* ********* ab hier für mobile querformat ************ */
+ @media screen and (min-width: $breakpoint-medium) {    // wenn Bildschirm grösser als, dann...
+    .bento-grid-home {
+        display: grid;
+        grid: [Zeile1-Start] "title      title     " 200px [Zeile1-Ende]
+              [Zeile2-Start] "room       camping   " 200px [Zeile2-Ende]
+              [Zeile3-Start] "picture    contact   " 200px [Zeile3-Ende]
+              [Zeile4-Start] "picture    contact   " 200px [Zeile4-Ende]
+              [Zeile5-Start] "team       .         " 200px [Zeile5-Ende]
+              [Zeile6-Start] "offer      offer     " 50px  [Zeile6-Ende]
+              [Zeile7-Start] "cafe       cafe      " 200px [Zeile7-Ende]
+              [Zeile8-Start] "spirit     spirit    " 200px [Zeile8-Ende]
+              [Zeile9-Start] "whitewater whitewater" 200px [Zeile9-Ende]
+              / 1fr 1fr;
+
+
+        grid-row-gap: 2*$basicWidth;
+        grid-column-gap: 2*$basicWidth;
+       
+        margin: $basicHeight $basicWidth;
+    }
+ }
+ 
+ 
+ /* *************************************************** */
+ /* *********** ab hier für desktop ******************* */
+ @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
+    .bento-grid-home {
+        display: grid;
+        grid: [Zeile1-Start] "title    title    contact"    200px [Zeile1-Ende]
+              [Zeile2-Start] "room     picture  contact"    200px [Zeile2-Ende]
+              [Zeile3-Start] "camping  picture  team"       200px [Zeile3-Ende]
+              [Zeile4-Start] "offer    offer    offer"       50px [Zeile4-Ende]
+              [Zeile5-Start] "cafe     spirit   whitewater" 200px [Zeile5-Ende]
+              / 1fr 1fr 1fr;
+
+
+        grid-row-gap: 2*$basicWidth;
+        grid-column-gap: 2*$basicWidth;
+       
+        margin: $basicHeight $basicWidth;
+    }
+
+    
+ }
+ 
+ 
+ 
+ /* *************************************************** */
+ /* ****** ab hier für desktop maximale Breite ******** */
+ @media screen and (min-width: $maxWidth) {    // wenn Bildschirm die maximale Breite erreicht hat
+  
+ }

@@ -1,21 +1,68 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <!-- <style lang="sass">
-      @import url('./scss/main.scss');
-    </style> -->
-  </head>
+<html lang="de">
+  
+  {{> head }}
+
   <body>
-    <div id="app"></div>
-    <div>
-      <a href="/page1.html" target="_blank">
-        Gehe zu Seite 1
-      </a>
+    <div id="app" class="wrapper">
+      <div class="basic-grid">
+        {{> header }}
+
+        <main>
+
+          <div class="bento-grid-home">
+            <div class="bento-box title-bento-box">
+              <h1 class="bento-box-title-big">retreat - auszeit</h1>
+              <h2 class="bento-box-title-small">DEIN ORT FÜR EIN RETREAT - RÜCKZUG - AUSZEIT</h2>
+            </div>
+    
+            <div class="bento-box contact-bento-box">
+              <h2 class="bento-box-title-small">Kontakt</h2>
+            </div>
+    
+            <div class="bento-box team-bento-box">
+              <h2 class="bento-box-title-small">Team</h2>
+            </div>
+    
+            <div class="bento-box room-bento-box">
+              <h2 class="bento-box-title-small">Zimmer</h2>
+            </div>
+    
+            <div class="bento-box camping-bento-box">
+              <h2 class="bento-box-title-small">Camping</h2>
+            </div>
+    
+            <div class="bento-box picture-bento-box">
+    
+            </div>
+    
+            <div class="bento-box offer-bento-box">
+    
+            </div>
+    
+            <div class="bento-box cafe-bento-box">
+              <h2 class="bento-box-title-small">Café</h2>
+            </div>
+    
+            <div class="bento-box spirit-bento-box">
+    
+            </div>
+    
+            <div class="bento-box whitewater-bento-box">
+    
+            </div>
+    
+
+
+          </div>
+
+        </main>
+
+        {{> footer }}
+      </div>
     </div>
+    
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>

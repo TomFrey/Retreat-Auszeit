@@ -1,4 +1,62 @@
 @import "specification";
+@import "grids";
 
-@import "vite-default";
+//@import "vite-default";
 
+
+
+/* ****************************************************** */
+ /* ****************** für mobile  ********************** */
+
+.wrapper{
+    margin: 0 auto;
+    max-width: $maxWidth;
+}
+
+header{
+    margin: $basicHeight $basicWidth;
+}
+ 
+.bento-box{
+    background-color: $bentoBoxBackgroundColor;
+}
+
+.bento-box-title-big{
+    @include bentoBoxTitleBigFont();
+}
+
+.bento-box-title-small{
+    @include bentoBoxTitleSmallFont();
+}
+
+footer{
+    margin: $basicHeight $basicWidth;
+}
+
+
+
+ /* **************************************************** */
+ /* ********* ab hier für mobile querformat ************ */
+ @media screen and (min-width: $breakpoint-medium) {    // wenn Bildschirm grösser als, dann...
+  
+ }
+ 
+ 
+ /* *************************************************** */
+ /* *********** ab hier für desktop ******************* */
+ @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
+   
+
+   
+
+
+    
+ }
+ 
+ 
+ 
+ /* *************************************************** */
+ /* ****** ab hier für desktop maximale Breite ******** */
+ @media screen and (min-width: $maxWidth) {    // wenn Bildschirm die maximale Breite erreicht hat
+  
+ }
