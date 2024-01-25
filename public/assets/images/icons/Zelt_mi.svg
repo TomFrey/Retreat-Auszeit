@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="155px" height="129px" viewBox="0 0 155 129" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Zelt_mi</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Startseite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-557.000000, -538.000000)" stroke="#FFFFFF" stroke-width="4">
+            <g id="Zelt_mi" transform="translate(561.000000, 540.360055)">
+                <polygon id="Triangle" points="73.5 15.4091029 147 124.409103 0 124.409103"></polygon>
+                <polygon id="Triangle" points="71.5 85.6399447 105 124.639945 38 124.639945"></polygon>
+                <path d="M73.5,0.639944698 L71.7297625,84.3283993" id="Line-4" stroke-linecap="square"></path>
+                <path d="M59.1250473,0.785507374 L72.606047,20.505618" id="Line-4" stroke-linecap="square"></path>
+                <path d="M89.0480368,1.04724807 L75.6826789,19.9854503" id="Line-4" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

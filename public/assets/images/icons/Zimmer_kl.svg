@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="85px" viewBox="0 0 96 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Zimmer_kl</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Startseite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-640.000000, -186.000000)" stroke="#FFFFFF">
+            <g id="Zimmer_kl" transform="translate(635.000000, 180.000000)">
+                <rect id="Rectangle" stroke-width="2" x="18.907646" y="38.8965099" width="68" height="51"></rect>
+                <path d="M51.8970698,47.2111726 L100.346453,9.5593745" id="Line" stroke-width="2" stroke-linecap="square" transform="translate(76.068305, 28.386155) rotate(-101.000000) translate(-76.068305, -28.386155) "></path>
+                <path d="M45.498776,55.402501 L14,2" id="Line" stroke-width="2" stroke-linecap="square" transform="translate(29.749388, 28.701250) rotate(-101.000000) translate(-29.749388, -28.701250) "></path>
+                <path d="M42.4855818,76.500962 C43.3775096,72.5546504 49.4790924,69.500962 56.8733994,69.500962 C64.2677064,69.500962 70.3692892,72.5546504 71.261217,76.500962 L42.4855818,76.500962 Z" id="Combined-Shape"></path>
+                <path d="M42.3733994,79.7578113 L42.3733994,87.7578113" id="Line-2" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M80.0788789,64.8571263 L80.3733994,88.375962" id="Line-2" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M41.3733994,78.3143181 L80.0788789,78.3143181" id="Line-2" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M79.3733994,69.5285472 L79.3733994,76.500962 L73.376608,76.500962 C73.3744747,76.4235073 73.3733994,76.3457225 73.3733994,76.2676286 C73.3733994,72.5305018 75.8358333,69.500962 78.8733994,69.500962 C79.0419443,69.500962 79.2087184,69.5102893 79.3733994,69.5285472 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
