@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="237px" height="202px" viewBox="0 0 237 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Zimmer</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Startseite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-126.000000, -69.000000)" stroke="#FFFFFF">
+            <g id="Zimmer" transform="translate(130.743151, 54.871575)">
+                <rect id="Rectangle" stroke-width="6" x="21.5342466" y="107.780822" width="184" height="104.958904"></rect>
+                <path d="M0.256849315,116.128425 L113.366206,18.6405728" id="Line" stroke-width="6" stroke-linecap="square"></path>
+                <path d="M111.916718,113.699392 L229.344803,20.5027997" id="Line" stroke-width="6" stroke-linecap="square" transform="translate(170.587954, 67.374375) rotate(-101.000000) translate(-170.587954, -67.374375) "></path>
+                <path d="M97.5753425,191.082192 C99.7679892,184.716089 115.373156,179.780822 134.29808,179.780822 C153.223003,179.780822 168.82817,184.716089 171.020817,191.082192 L97.5753425,191.082192 Z" id="Combined-Shape" stroke-width="4"></path>
+                <path d="M102.969178,194.678082 L102.969178,211.630137" id="Line-2" stroke-width="4" stroke-linecap="square"></path>
+                <path d="M180.794521,167.195205 L180.794521,213.684932" id="Line-2" stroke-width="4" stroke-linecap="square"></path>
+                <path d="M97.5753425,192.238014 L180.280822,192.238014" id="Line-2" stroke-width="4" stroke-linecap="square"></path>
+                <path d="M180.794521,174.664115 L180.794521,190.054795 L170.526242,190.054795 C170.522456,189.884273 170.520548,189.713025 170.520548,189.541096 C170.520548,181.313566 174.890371,174.643836 180.280822,174.643836 C180.453134,174.643836 180.624404,174.650651 180.794521,174.664115 Z" id="Combined-Shape" stroke-width="4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

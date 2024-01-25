@@ -43,6 +43,15 @@ header{
     text-align: center;
 }
 
+.bento-box-icon-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: $basicHeight;
+}
+.bento-box-icon{
+    max-width: 35%;
+}
+
 footer{
     margin: $basicHeight $basicWidth;
 }
@@ -62,6 +71,13 @@ footer{
     .bento-box-title-small--first-box{
         text-align: left;
     }
+
+    .bento-box-icon-wrapper{
+        margin-top: $basicHeight;
+    }
+    .bento-box-icon{
+        max-width: 30%;
+    }
  }
  
  
@@ -74,6 +90,13 @@ footer{
     
     .bento-box-title-small,.bento-box-title-small--first-box{
         font-size: 2.8vw;
+    }
+
+    .bento-box-icon-wrapper{
+        margin-top: 2*$basicHeight;
+    }
+    .bento-box-icon{
+        max-width: 35%;
     }
 
    
