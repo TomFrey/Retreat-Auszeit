@@ -28,6 +28,11 @@ html{
 header{
     margin: $basicHeight $basicWidth;
 }
+
+.bento-box-link{
+    text-decoration: none;
+    background-color: $bentoBoxBackgroundColor;
+}
  
 .bento-box{
     background-color: $bentoBoxBackgroundColor;
@@ -125,6 +130,27 @@ footer{
  /* *************************************************** */
  /* *********** ab hier für desktop ******************* */
  @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
+    
+    .bento-box-link:hover{
+        background-color: $bentoBoxBackgroundHoverColor;
+        ;
+        .bento-box{
+            background-color: $bentoBoxBackgroundHoverColor;
+        }
+        
+        .bento-box-title-big,.bento-box-title-small{
+            color: $bentoBoxBackgroundColor;
+        }
+
+        .bento-box-icon{
+               g{
+                g{
+                    stroke: $bentoBoxBackgroundColor;
+                }
+               }
+        }
+    }
+    
     .bento-box-title-big{
         font-size: 6.5vw;
     }
