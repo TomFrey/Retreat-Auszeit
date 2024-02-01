@@ -1,0 +1,49 @@
+/* ****************************************************** */
+/* ****************** für mobile  ********************** */
+.team-item-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: $basicWidth;
+}
+
+.team-item{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: $basicHeight;
+}
+
+.team-item-picture{
+    margin-right: $basicWidth
+}
+
+.team-item-name{
+    margin-top: $basicHeight;
+    @include teamMemberNameFont();
+}
+
+   
+
+ /* **************************************************** */
+ /* ********* ab hier für mobile querformat ************ */
+ @media screen and (min-width: $breakpoint-medium) {    // wenn Bildschirm grösser als, dann...
+   
+ }
+ 
+ 
+ /* *************************************************** */
+ /* *********** ab hier für desktop ******************* */
+ @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
+    .team-item{
+        margin-bottom: 2*$basicHeight;
+    }
+
+    
+ }
+ 
+ 
+ 
+ /* *************************************************** */
+ /* ****** ab hier für desktop maximale Breite ******** */
+ @media screen and (min-width: $maxWidth) {    // wenn Bildschirm die maximale Breite erreicht hat
+  
+ }
