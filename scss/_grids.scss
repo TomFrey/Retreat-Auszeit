@@ -32,7 +32,7 @@ footer{
           [Zeile6-Start]  "contact    " $bentoBoxHeight [Zeile6-Ende]
           [Zeile7-Start]  "contact    " $bentoBoxHeight [Zeile7-Ende]
           [Zeile8-Start]  "team       " $bentoBoxHeight [Zeile8-Ende]
-          [Zeile9-Start]  "offer      " 50px  [Zeile9-Ende]
+          [Zeile9-Start]  "offer      " auto  [Zeile9-Ende]
           [Zeile10-Start] "cafe       " $bentoBoxHeight [Zeile10-Ende]
           [Zeile11-Start] "spirit     " $bentoBoxHeight [Zeile11-Ende]
           [Zeile12-Start] "whitewater " $bentoBoxHeight [Zeile12-Ende]
@@ -97,7 +97,7 @@ footer{
               [Zeile3-Start] "picture    contact   " $bentoBoxHeight [Zeile3-Ende]
               [Zeile4-Start] "picture    contact   " $bentoBoxHeight [Zeile4-Ende]
               [Zeile5-Start] "team       .         " $bentoBoxHeight [Zeile5-Ende]
-              [Zeile6-Start] "offer      offer     " 50px  [Zeile6-Ende]
+              [Zeile6-Start] "offer      offer     " auto  [Zeile6-Ende]
               [Zeile7-Start] "cafe       cafe      " $bentoBoxHeight [Zeile7-Ende]
               [Zeile8-Start] "spirit     spirit    " $bentoBoxHeight [Zeile8-Ende]
               [Zeile9-Start] "whitewater whitewater" $bentoBoxHeight [Zeile9-Ende]
@@ -120,7 +120,7 @@ footer{
         grid: [Zeile1-Start] "title    title    contact"    $bentoBoxHeight [Zeile1-Ende]
               [Zeile2-Start] "room     picture  contact"    $bentoBoxHeight [Zeile2-Ende]
               [Zeile3-Start] "camping  picture  team"       $bentoBoxHeight [Zeile3-Ende]
-              [Zeile4-Start] "offer    offer    offer"       50px [Zeile4-Ende]
+              [Zeile4-Start] "offer    offer    offer"      auto [Zeile4-Ende]
               [Zeile5-Start] "cafe     spirit   whitewater" $bentoBoxHeight [Zeile5-Ende]
               / 1fr 1fr 1fr;
 

@@ -62,6 +62,21 @@ header{
     //max-width: 35%;
 }
 
+.offer-bento-box-content{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+    .offer-bento-box-title-big{
+        @include bentoBoxTitleBigFont();
+    }
+
+    .offer-bento-box-title-small{
+        @include bentoBoxTitleSmallFont();
+        align-self: flex-end;
+    }
+}
+
 footer{
     margin: $basicHeight $basicWidth;
 }
@@ -88,6 +103,22 @@ footer{
     .bento-box-icon{
         //max-width: 30%;
     }
+
+    .offer-bento-box-content{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+        .offer-bento-box-title-big{
+            font-size: 7.1vw;
+        }
+    
+        .offer-bento-box-title-small{
+            font-size: 4.1vw;
+            margin-left: -6.3vw;
+            padding-top: 6vw;
+        }
+    }
  }
  
  
@@ -110,6 +141,18 @@ footer{
         //max-width: 35%;
     }
 
+    .offer-bento-box-content{
+        .offer-bento-box-title-big{
+            font-size: 6.5vw;
+        }
+    
+        .offer-bento-box-title-small{
+            font-size: 2.8vw;
+            margin-left: -6vw;
+            padding-top: 68px;
+        }
+    }
+
    
  }
  
@@ -124,5 +167,17 @@ footer{
     
     .bento-box-title-small,.bento-box-title-small--first-box{
         font-size: 2.1rem;
+    }
+
+    .offer-bento-box-content{
+        .offer-bento-box-title-big{
+            font-size: 5rem;
+        }
+    
+        .offer-bento-box-title-small{
+            font-size: 2.6rem;
+            margin-left: -74px;
+            padding-top: 68px;
+        }
     }
  }
