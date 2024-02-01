@@ -46,6 +46,13 @@ header{
     text-align: center;
 }
 
+.bento-box-content{
+    height: $bentoBoxContentHeight;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
 .bento-box-icon-wrapper{
     display: flex;
     justify-content: center;
