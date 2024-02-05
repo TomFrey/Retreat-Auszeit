@@ -38,6 +38,12 @@ header{
     background-color: $bentoBoxBackgroundColor;
 }
 
+.bento-box.spirit-bento-box,.bento-box.whitewater-bento-box{
+    background-color: unset;
+    width: 100%;
+}
+
+
 .bento-box-title-big{
     @include bentoBoxTitleBigFont();
     margin-bottom: $basicHeight;
@@ -61,10 +67,7 @@ header{
 .bento-box-icon-wrapper{
     display: flex;
     justify-content: center;
-    //margin-top: $basicHeight;
-}
-.bento-box-icon{
-    //max-width: 35%;
+  
 }
 
 .offer-bento-box-content{
@@ -81,6 +84,22 @@ header{
         align-self: flex-end;
     }
 }
+
+.bento-box-image-link{
+    background: url('/assets/images/kanuschule_1-2.jpg') no-repeat top left;
+    text-decoration: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+.bento-box-image-link-title-small{
+    @include bentoBoxTitleSmallFont();
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
 
 footer{
     margin: $basicHeight $basicWidth;
@@ -102,13 +121,6 @@ footer{
         text-align: left;
     }
 
-    .bento-box-icon-wrapper{
-        //margin-top: $basicHeight;
-    }
-    .bento-box-icon{
-        //max-width: 30%;
-    }
-
     .offer-bento-box-content{
         display: flex;
         flex-flow: row nowrap;
@@ -123,6 +135,11 @@ footer{
             margin-left: -6.3vw;
             padding-top: 6vw;
         }
+    }
+
+    .bento-box-image-link-title-small{
+        font-size: 3.7vw;
+        background-color: rgba(255, 255, 255, 0.5);
     }
  }
  
@@ -160,13 +177,6 @@ footer{
         margin-bottom: 2*$basicHeight;
     }
 
-    .bento-box-icon-wrapper{
-        //margin-top: 2*$basicHeight;
-    }
-    .bento-box-icon{
-        //max-width: 35%;
-    }
-
     .offer-bento-box-content{
         .offer-bento-box-title-big{
             font-size: 6.5vw;
@@ -176,6 +186,19 @@ footer{
             font-size: 2.8vw;
             margin-left: -6vw;
             padding-top: 68px;
+        }
+    }
+
+    .bento-box-image-link-title-small{
+        font-size: 1.8rem;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .bento-box-image-link:hover{
+      
+        .bento-box-image-link-title-small{
+            color: $standardTextColor;
+            background-color: rgba(0, 0, 0, 0.5);
         }
     }
 
@@ -205,5 +228,10 @@ footer{
             margin-left: -74px;
             padding-top: 68px;
         }
+    }
+
+    .bento-box-image-link-title-small{
+        font-size: 2.1rem;
+        background-color: rgba(255, 255, 255, 0.5);
     }
  }
