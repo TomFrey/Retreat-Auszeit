@@ -169,13 +169,22 @@ footer{
  /* *************************************************** */
  /* *********** ab hier für desktop ******************* */
  @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
+
+    main{
+        //background: rgb(237,201,85);
+        background: radial-gradient(circle at 40% 40%, rgba(237,201,85,1) 0%, rgba(255,255,255,1) 58%);
+    }
+
+    .title-bento-box{    
+        background: radial-gradient(circle at 57% 100%, #EDCA55 -15%, #000000 85%);
+    }
+
+    .room-bento-box {
+        background: radial-gradient(circle at 100% 10%, #EDCA55 -30%, #000000 85%);
+    }
     
-    .bento-box-link:hover{
+    .bento-box-link.bento-box:hover{
         background-color: $bentoBoxBackgroundHoverColor;
-        ;
-        .bento-box{
-            background-color: $bentoBoxBackgroundHoverColor;
-        }
         
         .bento-box-title-big,.bento-box-title-small{
             color: $bentoBoxBackgroundColor;
@@ -201,6 +210,10 @@ footer{
             }
         }
         
+    }
+
+    .bento-box-link.bento-box.room-bento-box:hover{
+        background: radial-gradient(circle at 100% 10%, #EDCA55 -30%, $bentoBoxBackgroundHoverColor 85%);
     }
     
     .bento-box-title-big{
