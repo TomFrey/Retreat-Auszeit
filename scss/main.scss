@@ -31,7 +31,6 @@ header{
 
 .bento-box-link{
     text-decoration: none;
-    background-color: $bentoBoxBackgroundColor;
 }
  
 .bento-box{
@@ -84,6 +83,29 @@ header{
         align-self: flex-end;
     }
 }
+
+
+
+.bento-box.picture-bento-box{
+    background: url('/assets/images/schlucht.jpg') no-repeat top left;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.picture-bento-box-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.picture-bento-box-text{
+    @include bentoBoxStandardFont();
+    text-align: center;
+    margin-bottom: 4*$basicHeight;
+}
+
+
 
 .bento-box-image-link{
     background: url('/assets/images/kanuschule_1-2.jpg') no-repeat top left;
@@ -166,6 +188,19 @@ footer{
                 }
                }
         }
+
+        .picture-bento-box-icon{
+            polygon{
+                stroke: $bentoBoxBackgroundColor;
+                fill: $standardTextColor;
+                fill-opacity: 1;
+                stroke-width: 0;
+            }
+            text{
+                fill: $bentoBoxBackgroundColor;
+            }
+        }
+        
     }
     
     .bento-box-title-big{
