@@ -106,13 +106,19 @@ header{
 }
 
 
-
 .bento-box-image-link{
-    background: url('/assets/images/kanuschule_1-2.jpg') no-repeat top left;
     text-decoration: none;
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
+}
+
+.bento-box-image-link.whitewater-bento-box{
+    background: url('/assets/images/kanuschule_440.jpg') no-repeat top left;
+}
+
+.bento-box-image-link.spirit-bento-box{
+    background: url('/assets/images/spirituelleszentrum_440.jpg') no-repeat top left;
 }
 
 .bento-box-image-link-title-small{
@@ -157,6 +163,14 @@ footer{
             margin-left: -6.3vw;
             padding-top: 6vw;
         }
+    }
+
+    .bento-box-image-link.whitewater-bento-box{
+        background: url('/assets/images/kanuschule_1050.jpg') no-repeat top left;
+    }
+
+    .bento-box-image-link.spirit-bento-box{
+        background: url('/assets/images/spirituelleszentrum_1050.jpg') no-repeat top left;
     }
 
     .bento-box-image-link-title-small{
@@ -235,6 +249,14 @@ footer{
             margin-left: -6vw;
             padding-top: 68px;
         }
+    }
+
+    .bento-box-image-link.whitewater-bento-box{
+        background: url('/assets/images/kanuschule_400.jpg') no-repeat top left;
+    }
+
+    .bento-box-image-link.spirit-bento-box{
+        background: url('/assets/images/spirituelleszentrum_400.jpg') no-repeat top left;
     }
 
     .bento-box-image-link-title-small{
