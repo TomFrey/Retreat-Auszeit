@@ -1,9 +1,14 @@
 // vite.config.js
 import { resolve } from 'path';
 import handlebars from 'vite-plugin-handlebars';
+import inject from '@rollup/plugin-inject';
 
 export default {
   plugins: [
+    inject({   // => that should be first under plugins array
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),
     handlebars({
       partialDirectory: resolve(__dirname, 'partials'),
     }),
@@ -18,7 +23,7 @@ export default {
       input: {
         a: resolve(__dirname, 'index.html'),
         b: resolve(__dirname, 'seite/zimmer.html'),
-        c: resolve(__dirname, 'seite/campint.html')
+        c: resolve(__dirname, 'seite/camping.html')
       }
     }
   }

@@ -1,7 +1,14 @@
+/**
+ * External Components
+ */
+ @import "../node_modules/slick-carousel/slick/slick.scss";
+ @import "../node_modules/slick-carousel/slick/slick-theme.scss";
+
 @import "base/reset";
 @import "base/specification";
 
 @import "components/team";
+@import "components/overlay";
 
 @import "grids";
 

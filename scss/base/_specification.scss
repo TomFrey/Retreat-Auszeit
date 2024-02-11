@@ -3,6 +3,17 @@ $maxWidth: 1200px;  //TODO: auf 1500px setzen
 $breakpoint-large: 1050px;
 $breakpoint-medium: 440px;
 
+/*** sizes ***/
+$basicWidth: 8px;
+$basicHeight: 8px;
+$textSize: 1rem;
+$titleSize: 2.0rem;
+
+$bentoBoxHeight: 300px;
+$bentoBoxContentHeight: $bentoBoxHeight - 50px;
+
+$imageSliderWidth: 1000px;
+
 
 /*** fonts ***/
 $standardFontFamily: "Poppins", "sans-serif";
@@ -154,16 +165,6 @@ $standardFontFamily: "Poppins", "sans-serif";
   }
   
 
-
-
-/*** sizes ***/
-$basicWidth: 8px;
-$basicHeight: 8px;
-$textSize: 1rem;
-$titleSize: 2.0rem;
-
-$bentoBoxHeight: 300px;
-$bentoBoxContentHeight: $bentoBoxHeight - 50px;
 
 
 /*** colors ***/
