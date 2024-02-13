@@ -5,7 +5,7 @@ import inject from '@rollup/plugin-inject';
 
 export default {
   plugins: [
-    inject({   // => that should be first under plugins array
+    inject({   // => macht jQuery im ganzen Projekt sichtbar
       $: 'jquery',
       jQuery: 'jquery',
     }),

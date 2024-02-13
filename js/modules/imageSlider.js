@@ -1,11 +1,4 @@
-//import {$,jQuery} from 'jquery';
 import 'slick-carousel';
-
-//window.$ = $;
-//window.jQuery = jQuery;
-
-//import {$} from 'slick'
-
 import { get } from './globals.js'
 
     const OPEN_OVERLAY = 'js-openOverlay';

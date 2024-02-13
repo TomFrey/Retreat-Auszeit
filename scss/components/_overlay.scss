@@ -23,9 +23,91 @@
 // ANIMATIONS stuff
 $slide: all, 0.3s, cubic-bezier(.55,0,.1,1);
 
+
 .overlay{
     display: none;
- }
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.js-openOverlay{
+    display: block;
+}
+
+.overlay-content{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-close-wrapper{
+    display: none;
+}
+
+.image-carousel-wrapper {
+    max-width: 100%;
+}
+
+.pics-carousel-item{
+    max-width: 100%;
+    height: auto;
+}
+
+.slick-slide img {
+    margin: 0 auto;
+    max-width: 55%;
+    height: auto;
+}
+
+
+.slick-prev:before, .slick-next:before {
+    color: black
+}
+
+.slick-arrow {
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        margin-top: -21px;
+        width: 6*$basicWidth;
+        height: 6*$basicHeight;
+        border-top: 2px solid #FFFFFF;
+        border-left: 2px solid #FFFFFF;
+        left: 16px;
+    }
+
+    &:after {
+        display: none;
+    }
+
+    &.slick-prev {
+        left: $basicWidth;
+        z-index: 1;
+
+        &:before {
+            @include transform(rotate(-45 + deg));
+        }
+    }
+
+    &.slick-next {
+        right: 8.5*$basicWidth;
+        z-index: 1;
+        
+        &:before {
+            @include transform(rotate(135 + deg));
+        }
+    }
+}
    
 
  /* **************************************************** */
@@ -33,90 +115,12 @@ $slide: all, 0.3s, cubic-bezier(.55,0,.1,1);
  @media screen and (min-width: $breakpoint-medium) {    // wenn Bildschirm grösser als, dann...
    
 
-    .overlay{
-        display: none;
-        background-color: rgba(0,0,0,0.5);
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 10;
-    }
-
-    .js-openOverlay{
-        display: block;
-    }
-
-    .overlay-content{
-        display: block;
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .overlay-close-wrapper{
-        display: none;
-    }
-
-    .image-carousel-wrapper {
-		max-width: 100%;
-	}
-
-    .pics-carousel-item{
-        max-width: 100%;
-        height: auto;
-    }
-
     .slick-slide img {
         margin: 0 auto;
         max-width: 55%;
         height: auto;
 	}
 
-
-    .slick-prev:before, .slick-next:before {
-		color: black
-	}
-
-    .slick-arrow {
-		&:before {
-			content: "";
-			position: absolute;
-			display: block;
-			top: 50%;
-			margin-top: -21px;
-			width: 6*$basicWidth;
-			height: 6*$basicHeight;
-            border-top: 2px solid #FFFFFF;
-            border-left: 2px solid #FFFFFF;
-            left: 16px;
-		}
-
-		&:after {
-			display: none;
-		}
-
-		&.slick-prev {
-			left: $basicWidth;
-            z-index: 1;
-
-            &:before {
-                @include transform(rotate(-45 + deg));
-            }
-		}
-
-		&.slick-next {
-            right: 8.5*$basicWidth;
-            z-index: 1;
-			
-            &:before {
-                @include transform(rotate(135 + deg));
-            }
-		}
-	}
 
 }
 
@@ -128,25 +132,12 @@ $slide: all, 0.3s, cubic-bezier(.55,0,.1,1);
    
 
     .overlay{
-        display: none;
-        background-color: rgba(0,0,0,0.5);
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 10;
         overflow: scroll;
     }
 
     .overlay-content{
-        display: block;
-        width: $imageSliderWidth;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 90%;
+        max-width: 80%;
+        height: 80%;
     }
 
     .overlay-close-wrapper{
@@ -170,55 +161,21 @@ $slide: all, 0.3s, cubic-bezier(.55,0,.1,1);
         background-color: darkgray;
     }
 
-    .js-openOverlay{
-        display: block;
-    }
-
-    .image-carousel-wrapper {
-		max-width: $imageSliderWidth;
-	}
-
-    .pics-carousel-item{
-        max-width: 100%;
-        height: auto;
-    }
 
     .slick-slide img {
         margin: 0 auto;
-        width: 100%;
         max-width: 100%;
         height: auto;
 	}
 
-    .slick-prev:before, .slick-next:before {
-		color: black
-	}
 
     .slick-arrow {
 		&:before {
-			content: "";
-			position: absolute;
-			display: block;
-			top: 50%;
-			margin-top: -21px;
 			@include transition($slide);
-			width: 6*$basicWidth;
-			height: 6*$basicHeight;
-            border-top: 2px solid #FFFFFF;
-            border-left: 2px solid #FFFFFF;
-            left: 16px;
-		}
-
-		&:after {
-			display: none;
 		}
 
 		&.slick-prev {
 			left: -9*$basicWidth;
-
-            &:before {
-                @include transform(rotate(-45 + deg));
-            }
 
 			&:hover {
 				&:before {
@@ -231,10 +188,6 @@ $slide: all, 0.3s, cubic-bezier(.55,0,.1,1);
 		&.slick-next {
             right: -$basicWidth;
 			
-            &:before {
-                @include transform(rotate(135 + deg));
-            }
-
 			&:hover {
 				&:before {
                     border-top: 4px solid #FFFFFF;
@@ -252,5 +205,12 @@ $slide: all, 0.3s, cubic-bezier(.55,0,.1,1);
  /* *************************************************** */
  /* ****** ab hier für desktop maximale Breite ******** */
  @media screen and (min-width: $maxWidth) {    // wenn Bildschirm die maximale Breite erreicht hat
-  
+    .overlay-content{
+        width: $imageSliderWidth;
+        height: 90%;
+    }
+
+    .image-carousel-wrapper {
+		max-width: $imageSliderWidth;
+	}
  }
