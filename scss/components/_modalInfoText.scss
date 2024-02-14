@@ -1,0 +1,95 @@
+/* ****************************************************** */
+/* ****************** für mobile  ********************** */
+
+dialog.modal-detail-info{
+    border: 0;
+}
+
+dialog.modal-detail-info::backdrop{
+    background: radial-gradient(circle at 40% 40%, $backgroundSunshineColor 25%, rgba(0,0,0,1) 58%);
+    opacity: 0.8;
+}
+
+.modal-detail-info-close-button-wrapper{
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+}
+
+.modal-detail-info-close-button {
+    font-family: $standardFontFamily;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 3*$textSize;
+    color: rgb(0,0,0);
+}
+
+.modal-detail-info-text{
+    .modal-detail-info-title{
+        @include detailTitleFont();
+        display: inline-block;
+        margin-bottom: $basicHeight;
+    }
+
+    p{
+        @include detailTextFont();
+        margin-bottom: 2*$basicHeight;
+    }
+
+    ul{
+        @include detailListFont();
+        padding-left: 2*$basicWidth;
+        margin-bottom: 2*$basicHeight;
+
+        li{
+            list-style: square;
+            margin-bottom: 0.5*$basicHeight;
+        }
+    }
+}
+
+   
+
+ /* **************************************************** */
+ /* ********* ab hier für mobile querformat ************ */
+ @media screen and (min-width: $breakpoint-medium) {    // wenn Bildschirm grösser als, dann...
+    dialog.modal-detail-info{
+        margin: 2*$basicHeight 2%;
+    }
+}
+
+ /* *************************************************** */
+ /* *********** ab hier für desktop ******************* */
+ @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
+    dialog.modal-detail-info{
+        margin: 4*$basicHeight 10% 0 10%;
+    }
+
+    .modal-detail-info-close-button:hover {
+        background-color: $detailTitleColor;
+    }
+
+    .modal-detail-info-text{
+        p{
+            margin-bottom: 3*$basicHeight;
+        }
+
+        ul{
+            padding-left: 0;
+
+            li{
+                list-style: square inside;
+            }
+        }
+    }
+ }
+ 
+ /* *************************************************** */
+ /* ****** ab hier für desktop maximale Breite ******** */
+ @media screen and (min-width: $maxWidth) {    // wenn Bildschirm die maximale Breite erreicht hat
+   
+ }

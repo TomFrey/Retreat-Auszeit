@@ -1,0 +1,69 @@
+/* ****************************************************** */
+/* ****************** für mobile  ********************** */
+.info-button-wrapper{
+   display: block;
+   border-radius: 4px;
+   margin-top: 4*$basicHeight;
+
+    .info-button{
+        background-color: $standardTextColor;
+        @include infoButtonFont();
+        text-decoration: none;
+        padding: $basicHeight $basicWidth;
+        border-radius: 0.5*$basicWidth;
+        border: 1px solid $bentoBoxBackgroundColor;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-button-label{
+        margin-right: $basicWidth;
+    }
+}
+
+.info-button-wrapper:active{
+    transform: scale(0.98);
+}
+
+   
+
+ /* **************************************************** */
+ /* ********* ab hier für mobile querformat ************ */
+ @media screen and (min-width: $breakpoint-medium) {    // wenn Bildschirm grösser als, dann...
+    .info-button-wrapper{
+        display: inline-block;
+        margin-top: 2*$basicHeight;
+    }
+}
+ 
+ /* *************************************************** */
+ /* *********** ab hier für desktop ******************* */
+ @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
+    .info-button-wrapper{
+        margin-top: $basicHeight;
+    }
+
+    .info-button-wrapper:hover{
+        border: 1px solid $standardTextColor;
+
+        .info-button{
+            background-color: $bentoBoxBackgroundColor;
+            color: $standardTextColor;
+        }
+       
+        .info-button-icon{
+            g g {stroke: $standardTextColor}
+        }
+    }
+    
+ }
+ 
+ 
+ 
+ /* *************************************************** */
+ /* ****** ab hier für desktop maximale Breite ******** */
+ @media screen and (min-width: $maxWidth) {    // wenn Bildschirm die maximale Breite erreicht hat
+  
+ }

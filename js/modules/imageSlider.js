@@ -94,16 +94,6 @@ import { get } from './globals.js'
             });
         }
 
-        // //open image slider when picture is clicked
-        // arnelasPictures = document.querySelectorAll('.openImageSlider');
-		// if (arnelasPictures !== null) {
-		// 	arnelasPictures.forEach((arnelasPicture, key, allPictures) => {
-		// 		arnelasPicture.addEventListener('click', (event) => {
-        //             prepareImageSlider(event.target, allPictures.length);
-		// 		});
-		// 	});
-		// }
-
          //open image slider when picture is clicked
          imageSliders = document.querySelectorAll('.openImageSlider');
          if (imageSliders !== null) {
@@ -114,7 +104,6 @@ import { get } from './globals.js'
              });
          }
     }
-
 
 
     export {

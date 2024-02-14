@@ -56,6 +56,40 @@ $standardFontFamily: "Poppins", "sans-serif";
 }
 
 
+@mixin infoButtonFont(){
+	color: $bentoBoxBackgroundColor;
+	font-family: $standardFontFamily;
+	font-size: 1.2rem;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@mixin detailTitleFont(){
+	color: $detailTitleColor;
+	font-family: $standardFontFamily;
+	font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin detailTextFont(){
+	color: $bentoBoxBackgroundColor;
+	font-family: $standardFontFamily;
+	font-size: 1.2rem;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin detailListFont(){
+	color: $bentoBoxBackgroundColor;
+	font-family: $standardFontFamily;
+	font-size: 1.2rem;
+  font-weight: 200;
+  font-style: normal;
+}
+
+
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
@@ -171,6 +205,8 @@ $standardFontFamily: "Poppins", "sans-serif";
 $bentoBoxBackgroundColor: #000000;
 $bentoBoxBackgroundHoverColor: #eeeeee;
 $standardTextColor: #ffffff;
+$detailTitleColor: #8B6C27;
+$backgroundSunshineColor: #EDCA55;
 
 
 

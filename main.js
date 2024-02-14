@@ -1,9 +1,7 @@
 import './scss/main.scss'
 
+import { init as initHandleModalInfoText } from './js/modules/handleModalInfoText.js'
+import { init as initImageSlider } from './js/modules/imageSlider.js'
 
-
-import { init } from './js/modules/imageSlider.js'
-
-
-
-init();
+initHandleModalInfoText();
+initImageSlider();
