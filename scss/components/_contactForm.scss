@@ -1,0 +1,124 @@
+/* ****************************************************** */
+/* ****************** für mobile  ********************** */
+
+
+.contact-bento-box-wrapper{
+	display: grid;
+	grid: 	[Zeile1-Start] "mail form" 40% [Zeile1-Ende]
+			[Zeile2-Start] "map  map " 60% [Zeile2-Ende]
+	/ 30% 64%;
+	grid-row-gap: 2*$basicWidth;
+	grid-column-gap: 2*$basicWidth;
+	height: 95%;
+}
+
+
+
+.contact-mail-wrapper{
+    grid-area: mail;
+
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.contact-form-wrapper{
+    grid-area: form;
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+
+	padding-top: $basicWidth;
+}
+
+.contact-map-wrapper{
+    grid-area: map;
+	align-self: end;
+
+	iframe{
+		max-width: 100%;
+	}
+}
+
+
+.contact-address{
+    @include addressLineFont();
+	text-align: center;
+	margin-bottom: 2*$basicHeight;
+}
+
+.adress-line{
+	display: inline-block;
+}
+
+
+
+.contact-mail{
+	margin-top: 2*$basicHeight;
+	margin-bottom: 2*$basicHeight;
+}
+
+
+.contact-form{
+	background-color: $bentoBoxBackgroundColor;
+	width: 100%;
+}
+
+.contact-form-name, .contact-form-email{
+	margin-bottom: $basicHeight;
+
+	input {
+		width: 100%;
+	}
+}
+
+.contact-form-email{
+	
+}
+
+.contact-form-message{
+	margin-bottom: $basicHeight;
+
+	textarea {
+		width: 100%;
+	}
+}
+
+
+
+ /* **************************************************** */
+ /* ********* ab hier für mobile querformat ************ */
+ @media screen and (min-width: $breakpoint-medium) {    // wenn Bildschirm grösser als, dann...
+   
+}
+
+ /* *************************************************** */
+ /* *********** ab hier für desktop ******************* */
+ @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
+    
+	.contact-mail:hover{
+		g {
+			fill: #ffffff;
+			stroke: #ffffff;
+		}
+		g g {
+			fill: #000000; //$detailTitleColor;
+		}
+	}
+
+	.contact-whatsapp:hover{
+		g g circle {
+			fill: #ffffff;
+		}
+		g g g g {
+			fill: #000000;
+		}
+	}
+ }
+ 
+ /* *************************************************** */
+ /* ****** ab hier für desktop maximale Breite ******** */
+ @media screen and (min-width: $maxWidth) {    // wenn Bildschirm die maximale Breite erreicht hat
+   
+ }

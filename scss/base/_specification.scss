@@ -89,6 +89,22 @@ $standardFontFamily: "Poppins", "sans-serif";
   font-style: normal;
 }
 
+@mixin addressLineFont(){
+	color: $standardTextColor;
+	font-family: $standardFontFamily;
+	font-size: 1.2rem;
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+@mixin fieldInvalidStyles(){
+	border: 1px solid $errorColor;
+	box-shadow: 1px 1px 15px 0px lighten($errorColor, 25%);
+}
+
+
+
 
 .poppins-thin {
     font-family: "Poppins", sans-serif;
@@ -207,6 +223,7 @@ $bentoBoxBackgroundHoverColor: #eeeeee;
 $standardTextColor: #ffffff;
 $detailTitleColor: #8B6C27;
 $backgroundSunshineColor: #EDCA55;
+$errorColor: #FA4B57;
 
 
 

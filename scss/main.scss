@@ -11,6 +11,7 @@
 @import "components/team";
 @import "components/overlay";
 @import "components/modalInfoText";
+@import "components/contactForm";
 
 @import "grids";
 
@@ -68,12 +69,24 @@ header{
     text-align: center;
 }
 
+.contact-bento-box{
+    padding-left: $basicWidth;
+}
+
+
 .bento-box-content{
     height: $bentoBoxContentHeight;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
 }
+
+// .bento-box-content-doble{
+//     display: flex;
+//     flex-flow: column nowrap;
+//     justify-content: space-between;
+//     height: 560px;
+// }
 
 .bento-box-icon-wrapper{
     display: flex;
@@ -139,7 +152,6 @@ header{
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
 }
-
 
 footer{
     margin: $basicHeight $basicWidth;
