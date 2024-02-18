@@ -29,6 +29,14 @@ $standardFontFamily: "Poppins", "sans-serif";
   font-style: normal;
 }
 
+@mixin bentoBoxStandardBigFont(){
+	color: $standardTextColor;
+	font-family: $standardFontFamily;
+	font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @mixin bentoBoxTitleBigFont(){
 	color: $standardTextColor;
 	font-family: $standardFontFamily;

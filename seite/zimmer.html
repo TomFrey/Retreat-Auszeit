@@ -4,12 +4,181 @@
   {{> head }}
 
   <body>
-    <div id="app" class="wrapper">
+    <div class="overlay">           
+      <div class="overlay-content">
+          <div class="overlay-close-wrapper">
+              <span class="overlay-close-button">×</span>
+          </div>
+          
+          <div class="image-carousel-wrapper">
+                
+            <div class="pics-carousel">
+              <div class="pics-carousel-item">
+                <picture>
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra1.jpg" media="(min-width: 1050px)">
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra1.jpg" media="(min-width: 440px)">
+                  <img src="../assets/images/carousel/retreat-auszeit/ra1.jpg" title="" alt="">
+                </picture>
+              </div>
+              <div class="pics-carousel-item">
+                <picture>
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra2.jpg" media="(min-width: 1050px)">
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra2.jpg" media="(min-width: 440px)">
+                  <img src="../assets/images/carousel/retreat-auszeit/ra2.jpg" title="" alt="">
+                </picture>
+              </div>
+              <div class="pics-carousel-item">
+                <picture>
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra3.jpg" media="(min-width: 1050px)">
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra3.jpg" media="(min-width: 440px)">
+                  <img src="../assets/images/carousel/retreat-auszeit/ra3.jpg" title="" alt="">
+                </picture>
+              </div>
+              <div class="pics-carousel-item">
+                <picture>
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra4_l.jpg" media="(min-width: 1200px)"> <!-- auf $maxWidth setzen -->
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra4_m.jpg" media="(min-width: 440px)">
+                  <img src="../assets/images/carousel/retreat-auszeit/ra4_s.jpg" title="Rheinschlucht" alt="Rheinschlucht">
+                </picture>
+              </div>
+            </div>
+
+                  
+          </div>
+      </div>
+    </div>
+
+
+    <div class="wrapper">
       <div class="basic-grid">
         {{> header }}
 
         <main>
-            <h1>Zimmer</h1>
+          <div class="bento-grid-page">
+              <div class="bento-box title-bento-grid-page">
+                <div class="title-wrapper">
+                  <h1 class="bento-box-title-big page-title">Zimmer</h1>
+                  <div class="page-close-button-wrapper">
+                    <span class="page-close-button">X</span>
+                  </div>
+                </div>
+              
+                <div class="bento-box-text">
+                  <span>
+                    Wir haben schlichte, einfache Zimmer. WC und Duschen werden von allen Gästen gemeinsam
+                    genutzt. Jedes Zimmer wird mit einem eigenen Holzofen geheizt. 
+                  </span>
+                </div>   
+
+              </div>
+
+              <div class="bento-box prices-bento-grid-page">
+                <h2 class="bento-box-title-small">Preise</h2>
+
+                <div class="price-table-wrapper">
+                  <table class="price-table">
+                    <tbody>
+                      <tr>
+                        <td>Einzelzimmer:</td>
+                        <td>60.00 CHF</td>
+                      </tr>
+                      <tr>
+                        <td>Doppelzimmer:</td>
+                        <td>50.00 CHF</td>
+                      </tr>
+                      <tr>
+                        <td>Einnachtzuschlag:</td>
+                        <td>10.00 CHF</td>
+                      </tr>
+                      <tr>
+                        <td>Küchenbenützung:</td>
+                        <td>10.00 CHF</td>
+                      </tr>
+                      <tr>
+                        <td>Kurtaxe:</td>
+                        <td>2.40 CHF</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+               
+                <div class="bento-box-text">
+                  <span>
+                    Wenn sie <b>nur eine Nacht</b> bei uns bleiben verrechnen wir einen Einnachtzuschlag. 
+                    Respektive erhalten sie einen kleinen Rabatt, wenn sie mehr wie eine Nacht bleiben.
+                  </span>
+                </div>   
+                <div class="bento-box-text">
+                  <span>
+                    Wenn sie bei uns <b>kochen möchten</b>, dann verrechnen wir einen Zuschlag für die Küchenreinigung. Einen Tee oder Kaffee
+                    zubereiten heisst für uns noch nicht kochen. Und die Küche für das Zusammensitzen nutzen kostet auch nichts.
+                  </span>
+                </div>   
+              </div>
+
+              <a class="bento-box-link bento-box picture-bento-grid-page openImageSlider" href="javascript:;">
+                <div class="picture-bento-box-wrapper">
+                             
+                  <svg class="picture-bento-box-icon" width="138px" height="158px" viewBox="0 0 138 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Startseite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Icons" transform="translate(-584.000000, -1289.000000)">
+                            <g id="PlayIcon_mi" transform="translate(587.000000, 1294.000000)">
+                                <polygon id="PlayButton_mi" stroke="#FFFFFF" stroke-width="4" fill-opacity="0.3" fill="#000000" transform="translate(64.500000, 74.000000) rotate(90.000000) translate(-64.500000, -74.000000) " points="64.5 10 138 138 -9 138"></polygon>
+                                <text id="Bilder" font-family="Poppins-Regular, Poppins" font-size="24" font-weight="300" fill="#FFFFFF">
+                                    <tspan x="14.119" y="83">Bilder</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                  </svg>
+                </div>
+              </a>
+
+              <div class="bento-box text1-bento-grid-page">
+                <div class="bento-box-text-big">
+                  <span>Wir haben 
+                    <span class="text-xl">3</span> 
+                    <span>Einzel- und</span> 
+                    <span  class="text-xl">3</span>
+                    <span>Doppelzimmer.</span>
+                </div>
+                <div>
+                  <span class="bento-box-text">
+                    Ein Doppelzimmer kann auch gut zu dritt genutzt werden.
+                  </span>
+                </div>
+              </div>
+
+              <div class="bento-box text2-bento-grid-page">
+                <div class="bento-box-text-big">
+                  <span class="text-xl">kein</span> <span>Frühstück</span>
+                </div>
+                <div class="bento-box-text">
+                  <span>
+                    Sie können aber im 
+                    <a class="link-in-bento-box"
+                       href="https://www.cafezureinkehr.ch" 
+                       alt="Café zur Einkehr" 
+                       title="Café zur Einkehr">Café zur Einkehr</a> 
+                    anfragen, ob sie ein Frühstück bekommen.
+                  </span>
+                </div>
+                <div class="bento-box-text">
+                  <span>
+                    Oder sie essen ihr mitgebrachtes Frühstück in unserer gemeinsamen Küche, oder
+                    draussen in unserer überdachten Launch.
+                  </span>
+                </div>
+              </div>
+
+              <div class="bento-box text3-bento-grid-page">
+
+              </div>
+
+
+
+
+          </div>
 
         </main>
 

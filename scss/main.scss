@@ -12,6 +12,7 @@
 @import "components/overlay";
 @import "components/modalInfoText";
 @import "components/contactForm";
+@import "components/detailPage";
 
 @import "grids";
 
@@ -30,6 +31,10 @@ html{
 /* ****************************************************** */
  /* ****************** für mobile  ********************** */
 
+b {
+    font-weight: 500;
+}
+
 .wrapper{
     margin: 0 auto;
     max-width: $maxWidth;
@@ -39,6 +44,7 @@ header{
     margin: $basicHeight $basicWidth;
 }
 
+//Bentobox als Link
 .bento-box-link{
     text-decoration: none;
 }
@@ -50,6 +56,16 @@ header{
 .bento-box.spirit-bento-box,.bento-box.whitewater-bento-box{
     background-color: unset;
     width: 100%;
+}
+
+//Link in einer Bentobox
+.link-in-bento-box{
+    //text-decoration: none;
+    color: $detailTitleColor;
+	font-family: $standardFontFamily;
+	font-size: 1.3rem;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .title-bento-box{    
@@ -81,12 +97,20 @@ header{
     justify-content: center;
 }
 
-// .bento-box-content-doble{
-//     display: flex;
-//     flex-flow: column nowrap;
-//     justify-content: space-between;
-//     height: 560px;
-// }
+.bento-box-text{
+    @include bentoBoxStandardFont();
+    margin-bottom: 4*$basicHeight;
+}
+
+.bento-box-text-big{
+    @include bentoBoxStandardBigFont();
+    margin-bottom: 4*$basicHeight;
+}
+
+.text-xl{
+    font-size: 4rem;
+    font-weight: 600;
+}
 
 .bento-box-icon-wrapper{
     display: flex;
@@ -298,6 +322,10 @@ footer{
             color: $standardTextColor;
             background-color: rgba(0, 0, 0, 0.5);
         }
+    }
+
+    .link-in-bento-box:hover{
+        color: $standardTextColor;
     }
 
    

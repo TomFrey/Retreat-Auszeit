@@ -1,0 +1,93 @@
+/* ****************************************************** */
+/* ****************** für mobile  ********************** */
+
+.prices-bento-grid-page, .text1-bento-grid-page, .text2-bento-grid-page, .text3-bento-grid-page{
+    padding: $basicHeight $basicWidth;
+}
+
+.title-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.page-title{
+    flex: 0 1 90%;
+}
+
+.page-close-button-wrapper{
+    flex: 0 1 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-close-button{
+    font-family: $standardFontFamily;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 3*$textSize;
+    color: rgb(255,255,255);
+}
+
+.price-table-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center
+}
+
+.price-table{
+    @include bentoBoxStandardFont();
+    margin-bottom: 3*$basicHeight;
+
+    tr{
+        padding-bottom: $basicHeight;
+        line-height: 1.7rem;
+    }
+
+    td:first-of-type {
+        padding-right: 3*$basicWidth;
+    }
+
+    td:last-of-type {
+        text-align: end;
+    }
+}
+
+.bento-box.picture-bento-grid-page{
+    background: url('/assets/images/schlucht.jpg') no-repeat top left;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+
+ /* **************************************************** */
+ /* ********* ab hier für mobile querformat ************ */
+ @media screen and (min-width: $breakpoint-medium) {    // wenn Bildschirm grösser als, dann...
+    
+ }
+ 
+ 
+ /* *************************************************** */
+ /* *********** ab hier für desktop ******************* */
+ @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
+   
+
+    .page-close-button:hover {
+        color: $bentoBoxBackgroundColor;
+        background-color: $standardTextColor;
+    }
+    
+ }
+ 
+ 
+ 
+ /* *************************************************** */
+ /* ****** ab hier für desktop maximale Breite ******** */
+ @media screen and (min-width: $maxWidth) {    // wenn Bildschirm die maximale Breite erreicht hat
+  
+
+ }

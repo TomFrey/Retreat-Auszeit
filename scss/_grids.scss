@@ -87,6 +87,52 @@ footer{
 
 
 
+.bento-grid-page {
+    display: grid;
+    grid: [Zeile1-Start]  "title    " $bentoBoxHeight [Zeile1-Ende]
+          [Zeile2-Start]  "prices   " $bentoBoxHeight [Zeile2-Ende]
+          [Zeile3-Start]  "prices   " $bentoBoxHeight [Zeile3-Ende]
+          [Zeile4-Start]  "picture  " $bentoBoxHeight [Zeile4-Ende]
+          [Zeile5-Start]  "picture  " $bentoBoxHeight [Zeile5-Ende]
+          [Zeile6-Start]  "text1    " $bentoBoxHeight [Zeile6-Ende]
+          [Zeile7-Start]  "text2    " $bentoBoxHeight [Zeile7-Ende]
+          [Zeile8-Start]  "text3    " $bentoBoxHeight [Zeile8-Ende]
+          / 1fr;
+
+
+    grid-row-gap: 2*$basicWidth;
+    grid-column-gap: 2*$basicWidth;
+   
+    margin: $basicHeight $basicWidth;
+}
+
+
+.title-bento-grid-page {
+    grid-area: title;
+}
+
+.prices-bento-grid-page {
+    grid-area: prices;
+}
+
+.picture-bento-grid-page {
+    grid-area: picture;
+}
+
+.text1-bento-grid-page {
+    grid-area: text1;
+}
+
+.text2-bento-grid-page {
+    grid-area: text2;
+}
+
+.text3-bento-grid-page {
+    grid-area: text3;
+}
+
+
+
  /* **************************************************** */
  /* ********* ab hier für mobile querformat ************ */
  @media screen and (min-width: $breakpoint-medium) {    // wenn Bildschirm grösser als, dann...
@@ -97,16 +143,31 @@ footer{
               [Zeile3-Start] "picture    contact   " $bentoBoxHeight [Zeile3-Ende]
               [Zeile4-Start] "picture    contact   " $bentoBoxHeight [Zeile4-Ende]
               [Zeile5-Start] "team       .         " $bentoBoxHeight [Zeile5-Ende]
-              [Zeile6-Start] "offer      offer     " auto  [Zeile6-Ende]
+              [Zeile6-Start] "offer      offer     " auto            [Zeile6-Ende]
               [Zeile7-Start] "cafe       cafe      " $bentoBoxHeight [Zeile7-Ende]
               [Zeile8-Start] "spirit     spirit    " $bentoBoxHeight [Zeile8-Ende]
               [Zeile9-Start] "whitewater whitewater" $bentoBoxHeight [Zeile9-Ende]
               / 1fr 1fr;
 
-
         grid-row-gap: 2*$basicWidth;
         grid-column-gap: 2*$basicWidth;
        
+        margin: $basicHeight $basicWidth;
+    }
+
+
+    .bento-grid-page {
+        display: grid;
+        grid: [Zeile1-Start]  "title  title   " $bentoBoxHeight [Zeile1-Ende]
+              [Zeile2-Start]  "prices picture " $bentoBoxHeight [Zeile2-Ende]
+              [Zeile3-Start]  "prices picture " $bentoBoxHeight [Zeile3-Ende]
+              [Zeile4-Start]  "text1  text2   " $bentoBoxHeight [Zeile4-Ende]
+              [Zeile5-Start]  "text3  .       " $bentoBoxHeight [Zeile5-Ende]
+              / 1fr 1fr;
+
+        grid-row-gap: 2*$basicWidth;
+        grid-column-gap: 2*$basicWidth;
+    
         margin: $basicHeight $basicWidth;
     }
  }
@@ -124,10 +185,23 @@ footer{
               [Zeile5-Start] "cafe     spirit   whitewater" $bentoBoxHeight [Zeile5-Ende]
               / 1fr 1fr 1fr;
 
-
         grid-row-gap: 2*$basicWidth;
         grid-column-gap: 2*$basicWidth;
        
+        margin: $basicHeight $basicWidth;
+    }
+
+
+    .bento-grid-page {
+        display: grid;
+        grid: [Zeile1-Start]  "title  title   prices" $bentoBoxHeight [Zeile1-Ende]
+              [Zeile2-Start]  "text1  picture prices" $bentoBoxHeight [Zeile2-Ende]
+              [Zeile3-Start]  "text2  picture text3"  $bentoBoxHeight [Zeile3-Ende]
+              / 1fr 1fr 1fr;
+
+        grid-row-gap: 2*$basicWidth;
+        grid-column-gap: 2*$basicWidth;
+    
         margin: $basicHeight $basicWidth;
     }
 
