@@ -1,6 +1,4 @@
-
-	  
-	//https://stackoverflow.com/questions/18279141/javascript-string-encryption-and-decryption
+ 	//https://stackoverflow.com/questions/18279141/javascript-string-encryption-and-decryption
 	const decrypt = (salt, encoded) => {
 		const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0));
 		const applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
@@ -30,7 +28,6 @@
 	}
 
 	// https://jumk.de/nospam/stopspam.html
-    // href="javascript:linkTo_UnCryptMailto('nbjmup;jogpAsfusfbu.bvt{fju/di');"
 	function linkToUnCryptMailto(s)	{
 		window.open(UnCryptMailto(s), '_blank');
 	}
@@ -38,6 +35,6 @@
 
 export {
     linkToUnCryptMailto,
-    UnCryptMailto,
+    //UnCryptMailto,
     decryptLinkToMessenger
-}
+};
