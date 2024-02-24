@@ -196,18 +196,18 @@
                   </div>
                   <div class="contact-form">
                      
-                    <form action="" method="get" >
+                    <form class="contact-form-form">
                       <div class="contact-form-name">
                         <input type="text" name="name" id="name" placeholder="Name" required />
                       </div>
                       <div class="contact-form-email">
                         <input type="email" name="email" id="email" placeholder="Email" required />
                       </div>
-                      <div class="contact-form-message">
+                      <!-- <div class="contact-form-message">
                         <textarea id="message" name="message" rows="5" cols="20">
                           Nachricht
                         </textarea>
-                      </div>
+                      </div> -->
                       
                       
                       
@@ -228,6 +228,9 @@
                           loading="lazy" 
                           referrerpolicy="no-referrer-when-downgrade">
                   </iframe>
+
+                  <!--The div element for the map -->
+                  <!-- <div id="map"></div> -->
                 </div>
 
               </div> 
@@ -388,6 +391,13 @@
       </div>
     </div>
     
+    <!-- <script>
+      (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+        key: "AIzaSyAV9jWj1fuHFRC9ZsixOzg81RB1HHhQfgU",
+        // Add other bootstrap parameters as needed, using camel case.
+        // Use the 'v' parameter to indicate the version to load (alpha, beta, weekly, etc.)
+      });
+    </script> -->
     <script type="module" src="/main.js"></script>
   </body>
 </html>

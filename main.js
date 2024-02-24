@@ -4,9 +4,11 @@ import { init as initHandleModalInfoText } from './js/modules/handleModalInfoTex
 import { init as initImageSlider } from './js/modules/imageSlider.js'
 import { init as initSubPageNav } from './js/modules/handleSubPageNavigation.js'
 import { init as initContact } from './js/modules/handleContact.js'
+//import { initMap } from './js/modules/googleMaps.js'
 
 
 initHandleModalInfoText();
 initImageSlider();
 initSubPageNav();
 initContact();
+//initMap();
