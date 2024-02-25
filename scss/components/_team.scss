@@ -6,11 +6,44 @@
     margin-left: $basicWidth;
 }
 
-.team-item{
+.team-item-summary{
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: $basicHeight;
 }
+
+.team-item:not(:last-of-type){
+    margin-bottom: 3*$basicHeight;
+}
+
+.team-item--karoline,.team-item--joe{
+    .team-item-details{
+        opacity: 0;
+        height: 0;
+        pointer-events: none;
+    }
+}
+
+.team-item--karoline:active,.team-item--joe:active{
+        
+    .team-item-summary{
+       display: none;
+    }
+
+    .team-item-details{
+        display: block;
+        opacity: 1;
+        height: auto;
+        transition: opacity 0.5s ease-in-out;
+        padding: 0 $basicWidth;
+      
+        .team-item-text{
+            @include teamMemberTextFont();
+            height: 110px;
+        }
+    }
+}
+
 
 .team-item-picture{
     margin-right: $basicWidth
@@ -33,11 +66,29 @@
  /* *************************************************** */
  /* *********** ab hier für desktop ******************* */
  @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
-    .team-item{
+    .team-item:not(:last-of-type){
         margin-bottom: 2*$basicHeight;
     }
 
-    
+    .team-item--karoline:hover,.team-item--joe:hover,.team-item--karoline:active{
+        
+        .team-item-summary{
+           display: none;
+        }
+
+        .team-item-details{
+            display: block;
+            opacity: 1;
+            height: auto;
+            transition: opacity 0.5s ease-in-out;
+            padding: 0 $basicWidth;
+          
+            .team-item-text{
+                @include teamMemberTextFont();
+                height: 110px;
+            }
+        }
+    }
  }
  
  

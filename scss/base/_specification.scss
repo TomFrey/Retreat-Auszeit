@@ -63,6 +63,14 @@ $standardFontFamily: "Poppins", "sans-serif";
   font-style: normal;
 }
 
+@mixin teamMemberTextFont(){
+	color: $standardTextColor;
+	font-family: $standardFontFamily;
+	font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 @mixin infoButtonFont(){
 	color: $bentoBoxBackgroundColor;
