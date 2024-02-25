@@ -4,12 +4,201 @@
   {{> head }}
 
   <body>
-    <div id="app" class="wrapper">
+    <div class="overlay">           
+      <div class="overlay-content">
+          <div class="overlay-close-wrapper">
+              <span class="overlay-close-button">×</span>
+          </div>
+          
+          <div class="image-carousel-wrapper">
+                
+            <div class="pics-carousel">
+              <div class="pics-carousel-item">
+                <picture>
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra1.jpg" media="(min-width: 1050px)">
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra1.jpg" media="(min-width: 440px)">
+                  <img src="../assets/images/carousel/retreat-auszeit/ra1.jpg" title="" alt="">
+                </picture>
+              </div>
+              <div class="pics-carousel-item">
+                <picture>
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra2.jpg" media="(min-width: 1050px)">
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra2.jpg" media="(min-width: 440px)">
+                  <img src="../assets/images/carousel/retreat-auszeit/ra2.jpg" title="" alt="">
+                </picture>
+              </div>
+              <div class="pics-carousel-item">
+                <picture>
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra3.jpg" media="(min-width: 1050px)">
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra3.jpg" media="(min-width: 440px)">
+                  <img src="../assets/images/carousel/retreat-auszeit/ra3.jpg" title="" alt="">
+                </picture>
+              </div>
+              <div class="pics-carousel-item">
+                <picture>
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra4_l.jpg" media="(min-width: 1200px)"> <!-- auf $maxWidth setzen -->
+                  <source srcset="../assets/images/carousel/retreat-auszeit/ra4_m.jpg" media="(min-width: 440px)">
+                  <img src="../assets/images/carousel/retreat-auszeit/ra4_s.jpg" title="Rheinschlucht" alt="Rheinschlucht">
+                </picture>
+              </div>
+            </div>
+
+                  
+          </div>
+      </div>
+    </div>
+
+
+    <div class="wrapper">
       <div class="basic-grid">
         {{> header }}
 
         <main>
-            <h1>Camping</h1>
+          <div class="bento-grid-page">
+              <div class="bento-box title-bento-grid-page">
+                <div class="title-wrapper">
+                  <h1 class="bento-box-title-big page-title">Camping</h1>
+                  <div class="page-close-button-wrapper">
+                    <span class="page-close-button">X</span>
+                  </div>
+                </div>
+              
+                <div class="bento-box-text">
+                  <span>
+                    Wir haben ein kleines Plätzchen, wo man campieren kann. Hundert Meter vom Vorderrhein entfernt.
+                    Unsere Infrastruktur ist einfach, aber es hat alles, WC, Dusche, Sitzgelegenheit, ein Plätzchen zum abwaschen.
+                  </span>
+                </div>   
+
+              </div>
+
+              <div class="bento-box prices-bento-grid-page">
+                <h2 class="bento-box-title-small">Preise</h2>
+
+                <div class="price-table-wrapper">
+                  <table class="price-table">
+                    <tbody>
+                      <tr>
+                        <td>Person:</td>
+                        <td>12.00 CHF</td>
+                      </tr>
+                      <tr>
+                        <td>Zelt:</td>
+                        <td>8.00 CHF</td>
+                      </tr>
+                      <tr>
+                        <td>Fahrzeug kl. 5m:</td>
+                        <td>14.00 CHF</td>
+                      </tr>
+                      <tr>
+                        <td>Fahrzeug gr. 5m:</td>
+                        <td>18.00 CHF</td>
+                      </tr>
+                      <tr>
+                        <td>Strom:</td>
+                        <td>5.00 CHF</td>
+                      </tr>
+                      <tr>
+                        <td>Kurtaxe:</td>
+                        <td>2.40 CHF</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+               
+                <div class="bento-box-text">
+                  <span>
+                    Alle Preise gelten pro Nacht.
+                  </span>
+                </div>   
+                <div class="bento-box-text">
+                  <span>
+                    Check-In: ab 15 Uhr bis 19 Uhr <br>
+                    Check-Out: bis 11 Uhr
+                  </span>
+                </div>   
+                <div class="bento-box-text">
+                  <span>
+                    Es gibt Tage, da sind wir sehr flexibel aber es gibt auch Andere. Sprechen sie mit uns.
+                    Wenn wir ihre Pläne kennen ist vieles möglich. 
+                  </span>
+                </div>   
+              </div>
+
+              <a class="bento-box-link bento-box picture-bento-grid-page openImageSlider" href="javascript:;">
+                <div class="picture-bento-box-wrapper">
+                             
+                  <svg class="picture-bento-box-icon" width="138px" height="158px" viewBox="0 0 138 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Startseite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Icons" transform="translate(-584.000000, -1289.000000)">
+                            <g id="PlayIcon_mi" transform="translate(587.000000, 1294.000000)">
+                                <polygon id="PlayButton_mi" stroke="#FFFFFF" stroke-width="4" fill-opacity="0.3" fill="#000000" transform="translate(64.500000, 74.000000) rotate(90.000000) translate(-64.500000, -74.000000) " points="64.5 10 138 138 -9 138"></polygon>
+                                <text id="Bilder" font-family="Poppins-Regular, Poppins" font-size="24" font-weight="300" fill="#FFFFFF">
+                                    <tspan x="14.119" y="83">Bilder</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                  </svg>
+                </div>
+              </a>
+
+              <div class="bento-box text1-bento-grid-page">
+                <div class="bento-box-text-big">
+                  <span>Wir haben Platz für
+                    <span class="text-xl">10</span> 
+                    <span>kleine Zelte oder für</span> 
+                    <span  class="text-xl">3</span>
+                    <span>grössere Camper.</span>
+                </div>
+                <div>
+                  <span class="bento-box-text">
+                    
+                  </span>
+                </div>
+              </div>
+
+              <div class="bento-box text2-bento-grid-page">
+                <div class="bento-box-text-big">
+                  <span class="text-xl">selber</span> <span>kochen</span>
+                </div>
+                <div class="bento-box-text">
+                  <span>
+                    oder sie können auch im
+                    <a class="link-in-bento-box"
+                       href="https://www.cafezureinkehr.ch" 
+                       target="_blank"
+                       alt="Café zur Einkehr" 
+                       title="Café zur Einkehr">Café zur Einkehr</a> 
+                    etwas bekommen.
+                  </span>
+                </div>
+                <div class="bento-box-text">
+                  <span>
+                    Es hat eine überdachte, gemütliche Sitzecke, wo man essen oder einfach verweilen darf.
+                  </span>
+                </div>
+              </div>
+
+              <div class="bento-box text3-bento-grid-page">
+                <div class="bento-box-text">
+                  <span class="text-xl">Feuer</span> <span class="text-l">machen</span>
+                  <span>          
+                   ist möglich, es hat Holz, welches sie verwenden dürfen.
+                  </span>
+                </div>
+                <div class="bento-box-text">
+                  <span class="text-l">Bitte</span>
+                  <span>beachten sie das </span>  
+                  <span class="text-l">Feuerverbot</span> 
+                  <span>bei Trockenheit.</span> 
+                </div>
+              </div>
+
+
+
+
+          </div>
 
         </main>
 

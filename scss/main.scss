@@ -117,6 +117,11 @@ header{
     font-weight: 600;
 }
 
+.text-l{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 .bento-box-icon-wrapper{
     display: flex;
     justify-content: center;
@@ -289,6 +294,7 @@ footer{
     
     .bento-box-title-big{
         font-size: 6.5vw;
+        margin-bottom: 2*$basicHeight;
     }
     
     .bento-box-title-small,.bento-box-title-small--first-box{

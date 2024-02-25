@@ -10,6 +10,10 @@
     flex-flow: row nowrap;
 }
 
+.title-wrapper + .bento-box-text{
+    padding: $basicHeight $basicWidth;
+}
+
 .page-title{
     flex: 0 1 90%;
 }
@@ -48,7 +52,7 @@
     }
 
     td:first-of-type {
-        padding-right: 3*$basicWidth;
+        padding-right: 2*$basicWidth;
     }
 
     td:last-of-type {
@@ -68,6 +72,11 @@
  /* ********* ab hier für mobile querformat ************ */
  @media screen and (min-width: $breakpoint-medium) {    // wenn Bildschirm grösser als, dann...
     
+    .price-table{
+        td:first-of-type {
+            padding-right: $basicWidth;
+        }
+    } 
  }
  
  
@@ -75,14 +84,17 @@
  /* *********** ab hier für desktop ******************* */
  @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
    
-
     .page-close-button:hover {
         color: $bentoBoxBackgroundColor;
         background-color: $standardTextColor;
     }
-    
+
+    .price-table{
+        td:first-of-type {
+            padding-right: 3*$basicWidth;
+        }
+    } 
  }
- 
  
  
  /* *************************************************** */
