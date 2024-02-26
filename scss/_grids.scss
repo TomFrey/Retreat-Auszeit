@@ -2,9 +2,9 @@
 /* ****************** für mobile  ********************** */
 .basic-grid {
     display: grid;
-    grid: [Zeile1-Start] "header"  100px [Zeile1-Ende]
-          [Zeile2-Start] "main"    auto  [Zeile2-Ende]
-          [Zeile3-Start] "footer"  100px [Zeile3-Ende]
+    grid: [Zeile1-Start] "header"  auto [Zeile1-Ende]
+          [Zeile2-Start] "main"    auto [Zeile2-Ende]
+          [Zeile3-Start] "footer"  auto [Zeile3-Ende]
           / 1fr;
 }
 

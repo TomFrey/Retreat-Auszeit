@@ -1,4 +1,4 @@
-const subPageCloseButtons = document.querySelectorAll('.page-close-button');
+const subPageCloseButtons = document.querySelectorAll('.page-close-button, .impressum-close-button');
 
 function init() {
     if (subPageCloseButtons !== null) {

@@ -13,6 +13,7 @@
 @import "components/modalInfoText";
 @import "components/contactForm";
 @import "components/detailPage";
+@import "components/impressum";
 
 @import "grids";
 
@@ -31,7 +32,11 @@ html{
 /* ****************************************************** */
  /* ****************** für mobile  ********************** */
 
- #map {
+body{
+    background-color: $standardBackgroundColor;
+}
+
+#map {
     height: 400px; /* The height is 400 pixels */
     width: 100%; /* The width is the width of the web page */
 }
@@ -189,6 +194,22 @@ header{
 
 footer{
     margin: $basicHeight $basicWidth;
+
+    .footer-navigation-wrapper{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        a{
+            @include navigationLinkFont();
+            text-align: center;
+            padding: 0.5*$basicWidth;
+        }
+
+        a:not(:last-of-type){
+            margin-bottom: $basicHeight;
+        }
+    }
 }
 
 
@@ -277,7 +298,7 @@ footer{
         .picture-bento-box-icon{
             polygon{
                 stroke: $bentoBoxBackgroundColor;
-                fill: $standardTextColor;
+                fill: $bentoBoxTextColor;
                 fill-opacity: 1;
                 stroke-width: 0;
             }
@@ -330,13 +351,30 @@ footer{
     .bento-box-image-link:hover{
       
         .bento-box-image-link-title-small{
-            color: $standardTextColor;
+            color: $bentoBoxTextColor;
             background-color: rgba(0, 0, 0, 0.5);
         }
     }
 
     .link-in-bento-box:hover{
-        color: $standardTextColor;
+        color: $bentoBoxTextColor;
+    }
+
+
+    footer{
+        margin: 2*$basicHeight 2*$basicWidth;
+    
+        .footer-navigation-wrapper{
+           
+            a:not(:last-of-type){
+                margin-bottom: 2*$basicHeight;
+            }
+
+            a:hover{
+                color: $standardBackgroundColor;
+                background-color: $standardTextColor;
+            }
+        }
     }
 
    

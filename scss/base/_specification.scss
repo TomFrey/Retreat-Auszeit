@@ -17,12 +17,27 @@ $imageSliderWidth: 1100px;
 
 /*** fonts ***/
 $standardFontFamily: "Poppins", "sans-serif";
-//$standardTextFont: "Poppins-Regular", "Arial", "sans-serif";
+
+
+
+
+/*** colors ***/
+$standardBackgroundColor: #ffffff;
+$backgroundSunshineColor: #EDCA55;
+$bentoBoxBackgroundColor: #000000;
+$bentoBoxBackgroundHoverColor: #eeeeee;
+$bentoBoxTextColor: #ffffff;
+$standardTextColor: #000000;
+$detailTitleColor: #8B6C27;
+
+$errorColor: #FA4B57;
+
+
 
 
 
 @mixin bentoBoxStandardFont(){
-	color: $standardTextColor;
+	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 1.2rem;
   font-weight: 300;
@@ -30,7 +45,7 @@ $standardFontFamily: "Poppins", "sans-serif";
 }
 
 @mixin bentoBoxStandardBigFont(){
-	color: $standardTextColor;
+	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 2rem;
   font-weight: 400;
@@ -38,16 +53,15 @@ $standardFontFamily: "Poppins", "sans-serif";
 }
 
 @mixin bentoBoxTitleBigFont(){
-	color: $standardTextColor;
+	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 4rem;
   font-weight: 500;
   font-style: normal;
 }
 
-
 @mixin bentoBoxTitleSmallFont(){
-	color: $standardTextColor;
+	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 6.9vw;
   font-weight: 400;
@@ -56,7 +70,7 @@ $standardFontFamily: "Poppins", "sans-serif";
 
 
 @mixin teamMemberNameFont(){
-	color: $standardTextColor;
+	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 1.2rem;
   font-weight: 300;
@@ -64,7 +78,7 @@ $standardFontFamily: "Poppins", "sans-serif";
 }
 
 @mixin teamMemberTextFont(){
-	color: $standardTextColor;
+	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 1rem;
   font-weight: 300;
@@ -73,7 +87,7 @@ $standardFontFamily: "Poppins", "sans-serif";
 
 
 @mixin infoButtonFont(){
-	color: $bentoBoxBackgroundColor;
+	color: $standardTextColor;
 	font-family: $standardFontFamily;
 	font-size: 1.2rem;
   font-weight: 300;
@@ -90,7 +104,7 @@ $standardFontFamily: "Poppins", "sans-serif";
 }
 
 @mixin detailTextFont(){
-	color: $bentoBoxBackgroundColor;
+	color: $standardTextColor;
 	font-family: $standardFontFamily;
 	font-size: 1.2rem;
   font-weight: 300;
@@ -98,7 +112,7 @@ $standardFontFamily: "Poppins", "sans-serif";
 }
 
 @mixin detailListFont(){
-	color: $bentoBoxBackgroundColor;
+	color: $standardTextColor;
 	font-family: $standardFontFamily;
 	font-size: 1.2rem;
   font-weight: 200;
@@ -106,7 +120,7 @@ $standardFontFamily: "Poppins", "sans-serif";
 }
 
 @mixin addressLineFont(){
-	color: $standardTextColor;
+	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 1.2rem;
   font-weight: 200;
@@ -120,6 +134,14 @@ $standardFontFamily: "Poppins", "sans-serif";
 }
 
 
+
+@mixin navigationLinkFont(){
+	color: $standardTextColor;
+	font-family: $standardFontFamily;
+	font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+}
 
 
 .poppins-thin {
@@ -229,18 +251,3 @@ $standardFontFamily: "Poppins", "sans-serif";
     font-weight: 900;
     font-style: italic;
   }
-  
-
-
-
-/*** colors ***/
-$bentoBoxBackgroundColor: #000000;
-$bentoBoxBackgroundHoverColor: #eeeeee;
-$standardTextColor: #ffffff;
-$detailTitleColor: #8B6C27;
-$backgroundSunshineColor: #EDCA55;
-$errorColor: #FA4B57;
-
-
-
-$baseColorJoe: green;

@@ -1,0 +1,101 @@
+/* ****************************************************** */
+/* ****************** für mobile  ********************** */
+
+.impressum-wrapper{
+    background-color: $bentoBoxBackgroundColor;
+    padding: $basicHeight $basicWidth;
+}
+
+.impressum-close-button-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+}
+
+.impressum-close-button{
+    font-family: $standardFontFamily;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 4*$textSize;
+    color: rgb(255,255,255);
+}
+
+
+.impressum-title-big{
+    @include bentoBoxTitleSmallFont();
+    font-size: 8vw;
+    margin-bottom: $basicHeight;
+}
+
+.impressum-title{
+    @include bentoBoxStandardBigFont();
+    font-size: 1.6rem;
+    margin-bottom: $basicHeight;
+}
+
+.impressum-text{
+    @include bentoBoxStandardFont();
+    margin-bottom: 2*$basicHeight;
+}
+
+.impressum-title-big.center,.impressum-title.center,.impressum-text.center{
+    text-align: center;
+}
+
+.impressum-contact-address{
+    @include bentoBoxStandardFont();
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 2*$basicHeight;
+}
+
+
+ /* **************************************************** */
+ /* ********* ab hier für mobile querformat ************ */
+ @media screen and (min-width: $breakpoint-medium) {    // wenn Bildschirm grösser als, dann...
+        
+    .impressum-title-big{
+        font-size: 8vw;
+    }
+
+    .impressum-title{
+        font-size: 2rem;
+    }
+ }
+ 
+ 
+ /* *************************************************** */
+ /* *********** ab hier für desktop ******************* */
+ @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
+   
+    .impressum-close-button:hover{
+        color: $bentoBoxBackgroundColor;
+        background-color: $bentoBoxTextColor;
+    }
+
+    .impressum-title-big{
+        margin-bottom: 3*$basicHeight;
+        font-size: 6.9vw;
+    }
+
+    .impressum-text{
+        margin-bottom: 4*$basicHeight;
+    }
+
+    .impressum-contact-address{
+        margin-bottom: 4*$basicHeight;
+    }
+ }
+ 
+ 
+ /* *************************************************** */
+ /* ****** ab hier für desktop maximale Breite ******** */
+ @media screen and (min-width: $maxWidth) {    // wenn Bildschirm die maximale Breite erreicht hat
+    .impressum-title-big{
+        font-size: 6rem;
+    }
+ }

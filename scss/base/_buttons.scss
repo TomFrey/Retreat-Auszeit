@@ -6,7 +6,7 @@
    margin-top: 4*$basicHeight;
 
     .info-button{
-        background-color: $standardTextColor;
+        background-color: $bentoBoxTextColor;
         @include infoButtonFont();
         text-decoration: none;
         padding: $basicHeight $basicWidth;
@@ -46,15 +46,15 @@
     }
 
     .info-button-wrapper:hover{
-        border: 1px solid $standardTextColor;
+        border: 1px solid $bentoBoxTextColor;
 
         .info-button{
             background-color: $bentoBoxBackgroundColor;
-            color: $standardTextColor;
+            color: $bentoBoxTextColor;
         }
        
         .info-button-icon{
-            g g {stroke: $standardTextColor}
+            g g {stroke: $bentoBoxTextColor}
         }
     }
     
