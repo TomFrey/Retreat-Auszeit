@@ -61,10 +61,34 @@
 }
 
 .bento-box.picture-bento-grid-page{
-    background: url('/assets/images/schlucht.jpg') no-repeat top left;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+}
+
+.bento-box.picture-bento-grid-page.camping{
+    background: url('/assets/images/camping.webp') no-repeat top left;
+}
+
+.bento-box.picture-bento-grid-page.zimmer{
+    background: url('/assets/images/zimmer1.webp') no-repeat top left;
+}
+
+
+.bento-box.bento-box-camping{
+    background-color: $bentoBoxBackgroundColorSubsideCamping;
+    color: $bentoBoxTextColorSubsideCamping;
+    .page-close-button {
+        color: $bentoBoxTextColorSubsideCamping;
+    }
+}
+
+.bento-box.bento-box-zimmer{
+    background-color: $bentoBoxBackgroundColorSubsideRoom;
+    color: $bentoBoxTextColorSubsideRoom;
+    .page-close-button {
+        color: $bentoBoxTextColorSubsideRoom;
+    }
 }
 
 
@@ -83,10 +107,27 @@
  /* *************************************************** */
  /* *********** ab hier für desktop ******************* */
  @media screen and (min-width: $breakpoint-large) {    // wenn Bildschirm grösser als, dann...
-   
-    .page-close-button:hover {
-        color: $bentoBoxBackgroundColor;
-        background-color: $bentoBoxTextColor;
+
+    main.main-camping{
+        background: radial-gradient(circle at 40% 40%, $bentoBoxBackgroundColorSubsideCamping 0%, rgba(255,255,255,1) 58%);
+    }
+
+    main.main-zimmer{
+        background: radial-gradient(circle at 40% 40%, $bentoBoxBackgroundColorSubsideRoom 0%, rgba(255,255,255,1) 58%);
+    }
+
+    .bento-box.bento-box-zimmer{
+        .page-close-button:hover {
+            color: $bentoBoxBackgroundColorSubsideRoom;
+            background-color: $bentoBoxTextColorSubsideRoom;
+        }
+    }
+
+    .bento-box.bento-box-camping{
+        .page-close-button:hover {
+            color: $bentoBoxBackgroundColorSubsideCamping;
+            background-color: $bentoBoxTextColorSubsideCamping;
+        }
     }
 
     .price-table{

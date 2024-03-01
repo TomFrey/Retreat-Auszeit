@@ -26,18 +26,21 @@
 
 .impressum-title-big{
     @include bentoBoxTitleSmallFont();
+    color:  $bentoBoxTextColor;
     font-size: 8vw;
     margin-bottom: $basicHeight;
 }
 
 .impressum-title{
     @include bentoBoxStandardBigFont();
+    color:  $bentoBoxTextColor;
     font-size: 1.6rem;
     margin-bottom: $basicHeight;
 }
 
 .impressum-text{
     @include bentoBoxStandardFont();
+    color:  $bentoBoxTextColor;
     margin-bottom: 2*$basicHeight;
 }
 
@@ -47,6 +50,7 @@
 
 .impressum-contact-address{
     @include bentoBoxStandardFont();
+    color:  $bentoBoxTextColor;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;

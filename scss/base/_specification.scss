@@ -30,6 +30,12 @@ $bentoBoxTextColor: #ffffff;
 $standardTextColor: #000000;
 $detailTitleColor: #8B6C27;
 
+$bentoBoxBackgroundColorSubsideRoom: #FFC763;
+$bentoBoxTextColorSubsideRoom: #000000;
+
+$bentoBoxBackgroundColorSubsideCamping: #A4D955;
+$bentoBoxTextColorSubsideCamping: #000000;
+
 $errorColor: #FA4B57;
 
 
@@ -37,7 +43,6 @@ $errorColor: #FA4B57;
 
 
 @mixin bentoBoxStandardFont(){
-	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 1.2rem;
   font-weight: 300;
@@ -45,7 +50,6 @@ $errorColor: #FA4B57;
 }
 
 @mixin bentoBoxStandardBigFont(){
-	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 2rem;
   font-weight: 400;
@@ -53,7 +57,6 @@ $errorColor: #FA4B57;
 }
 
 @mixin bentoBoxTitleBigFont(){
-	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 4rem;
   font-weight: 500;
@@ -61,7 +64,6 @@ $errorColor: #FA4B57;
 }
 
 @mixin bentoBoxTitleSmallFont(){
-	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 6.9vw;
   font-weight: 400;
@@ -70,7 +72,6 @@ $errorColor: #FA4B57;
 
 
 @mixin teamMemberNameFont(){
-	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 1.2rem;
   font-weight: 300;
@@ -78,7 +79,6 @@ $errorColor: #FA4B57;
 }
 
 @mixin teamMemberTextFont(){
-	color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 1rem;
   font-weight: 300;
@@ -112,7 +112,7 @@ $errorColor: #FA4B57;
 }
 
 @mixin detailListFont(){
-	color: $standardTextColor;
+	//color: $standardTextColor;
 	font-family: $standardFontFamily;
 	font-size: 1.2rem;
   font-weight: 200;
@@ -120,7 +120,7 @@ $errorColor: #FA4B57;
 }
 
 @mixin addressLineFont(){
-	color: $bentoBoxTextColor;
+	//color: $bentoBoxTextColor;
 	font-family: $standardFontFamily;
 	font-size: 1.2rem;
   font-weight: 200;
@@ -144,6 +144,8 @@ $errorColor: #FA4B57;
 }
 
 
+
+/*
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
@@ -251,3 +253,4 @@ $errorColor: #FA4B57;
     font-weight: 900;
     font-style: italic;
   }
+*/

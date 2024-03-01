@@ -36,7 +36,8 @@
     grid-area: map;
 	align-self: end;
 
-	iframe{
+	#map{
+		height: 300px;
 		max-width: 100%;
 	}
 }

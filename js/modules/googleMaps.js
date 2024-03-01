@@ -2,25 +2,22 @@
 let map;
 
 async function initMap() {
-  // The location of Uluru
-  const position = { lat: -25.344, lng: 131.031 };
-  // Request needed libraries.
-  //@ts-ignore
+  // The location of Retreat-Auszeit
+  const position = { lat: 46.80722791563473, lng: 9.312256329089417 }; 
   const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-  // The map, centered at Uluru
+  // The map, centered at Retreat-Auszeit
   map = new Map(document.getElementById("map"), {
-    zoom: 4,
+    zoom: 9,
     center: position,
-    //mapId: "DEMO_MAP_ID",
+    mapId: "6432480babd2c364",
   });
 
-  // The marker, positioned at Uluru
-  const marker = new AdvancedMarkerView({
-    map: map,
+  const marker = new google.maps.marker.AdvancedMarkerElement({
+    map,
     position: position,
-    title: "Uluru",
+    title: 'Retreat-Auszeit',
   });
 }
 
